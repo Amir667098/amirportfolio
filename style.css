@@ -1,0 +1,73 @@
+/* ===== style.css - Shorayev Amir Portfolio ===== */
+/* ===== Colour scheme: HEX, RGB, RGBA and named colours ===== */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;   /* body text font */
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #0f172a;                  /* HEX - dark navy background */
+  color: #e2e8f0;                             /* HEX - light text */
+}
+h1, h2, h3 { font-family: 'Poppins', Arial, sans-serif; }
+h1 { font-size: 2.8rem; margin: 0; }
+h2 { font-size: 2rem; color: #38bdf8; margin-top: 0; }   /* sky blue accent */
+h3 { font-size: 1.2rem; color: #38bdf8; margin-top: 0; }
+p  { color: #cbd5e1; }
+a  { color: #38bdf8; }
+a:hover { color: orange; }                    /* named colour */
+
+/* ===== Layout ===== */
+.container { width: 90%; max-width: 1000px; margin: auto; }
+section { padding: 60px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }  /* RGBA */
+
+/* ===== Navigation ===== */
+header { background-color: rgb(30, 41, 59); position: sticky; top: 0; }       /* RGB */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+nav .logo { font-family: 'Poppins', sans-serif; font-size: 1.3rem; color: white; text-decoration: none; }
+nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+nav ul a { color: #e2e8f0; text-decoration: none; }
+nav ul a:hover { color: #38bdf8; }
+
+/* ===== Hero ===== */
+.hero { display: flex; align-items: center; gap: 40px; }
+.hero img { width: 250px; height: 250px; border-radius: 50%; border: 4px solid #38bdf8; object-fit: cover; }
+.subtitle { font-size: 1.3rem; color: #38bdf8; }
+.btn { display: inline-block; background-color: #38bdf8; color: #0f172a; padding: 12px 25px;
+       border-radius: 8px; text-decoration: none; font-weight: bold; border: none; font-size: 1rem; cursor: pointer; }
+.btn:hover { background-color: orange; color: #0f172a; }
+
+/* ===== Cards ===== */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { background-color: rgb(30, 41, 59); padding: 20px; border-radius: 10px; }
+.contact-grid { grid-template-columns: 2fr 1fr; }
+
+/* ===== Table ===== */
+table { width: 100%; border-collapse: collapse; background-color: rgb(30, 41, 59); }
+caption { padding: 10px; font-style: italic; color: #cbd5e1; }
+th, td { padding: 12px; border: 1px solid #334155; text-align: left; vertical-align: top; }
+th { background-color: #38bdf8; color: #0f172a; }
+table table th { background-color: #334155; color: #e2e8f0; }   /* nested table header */
+
+/* ===== Media ===== */
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+figure { margin: 0; background-color: rgb(30, 41, 59); padding: 15px; border-radius: 10px; }
+figure img, figure video { width: 100%; height: 300px; object-fit: cover; object-position: top; border-radius: 8px; }
+figure audio { width: 100%; }
+figcaption { font-size: 0.9rem; color: #94a3b8; margin-top: 8px; }
+
+/* ===== Form ===== */
+form { display: flex; flex-direction: column; gap: 12px; }
+input, select, textarea { padding: 10px; border-radius: 6px; border: 1px solid #334155;
+                          background-color: #1e293b; color: white; font-size: 1rem; font-family: inherit; }
+#formMessage { color: lightgreen; font-weight: bold; }                           /* named colour */
+
+footer { text-align: center; padding: 30px 0; font-size: 0.9rem; color: #94a3b8; }
+
+/* ===== Responsive design: tablet and mobile ===== */
+@media (max-width: 768px) {
+  .hero { flex-direction: column; text-align: center; }
+  .cards, .gallery, .contact-grid { grid-template-columns: 1fr; }
+  nav { flex-direction: column; gap: 10px; }
+  nav ul { gap: 12px; flex-wrap: wrap; justify-content: center; }
+  h1 { font-size: 2rem; }
+}

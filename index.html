@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shorayev Amir | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER & NAVIGATION ===== -->
+<header>
+  <div class="container">
+    <nav>
+      <a href="#home" class="logo">Amir</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Achievements</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="home">
+  <div class="container hero">
+    <img src="amir2.jpeg" alt="Photo of Shorayev Amir with a basketball">
+    <div>
+      <h1>Shorayev Amir</h1>
+      <p class="subtitle">Future Web Developer &amp; AI Programmer</p>
+      <p>IT student at Quest International University, Malaysia.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am interested in <strong>IT</strong>, <strong>sports</strong> and <strong>modern technologies</strong>.
+       For several years I played basketball professionally for the <em>"Barsy Atyrau"</em> team.
+       I finished 11 years of school, and now I am studying at
+       <a href="https://www.qiu.edu.my" target="_blank">Quest International University (QIU)</a>
+       in Malaysia, in the Information Technology programme.</p>
+    <p>In the future, I want to build websites for large companies and work as a programmer
+       in the field of Artificial Intelligence (AI).</p>
+
+    <h3>Education</h3>
+    <ol>
+      <li><strong>School No. 16, Atyrau</strong> - 11 years, graduated in 2026</li>
+      <li><strong>2026 - present</strong> - Foundation in Science (IT), Quest International University, Malaysia
+        <ul>
+          <li>FIS1104 Introduction to Web Design</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Microsoft Word &amp; PowerPoint</li>
+          <li>Basic use of AI tools</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Teamwork</li>
+          <li>Discipline</li>
+          <li>Working under pressure</li>
+          <li>Communication</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Kazakh - C1</li>
+          <li>Russian - C1</li>
+          <li>English - B1</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS TABLE (with nested table) ===== -->
+<section id="projects">
+  <div class="container">
+    <h2>Achievements &amp; Projects</h2>
+    <table>
+      <caption>Table 1: My achievements and projects</caption>
+      <tr>
+        <th>Activity</th>
+        <th>Year</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td><strong>Basketball - "Barsy Atyrau"</strong></td>
+        <td>[2021-2026]</td>
+        <td>
+          <table>
+            <tr><th>Championship</th><td>Republic of Kazakhstan Championship</td></tr>
+            <tr><th>Result</th><td>2nd place</td></tr>
+            <tr><th>Sport title</th><td>Candidate Master of Sports (CMS)</td></tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Biology Olympiads</strong></td>
+        <td>[2025]</td>
+        <td>Participant in school biology olympiads</td>
+      </tr>
+      <tr>
+        <td><strong>Volunteering</strong></td>
+        <td>[2023]</td>
+        <td>Volunteer at Helpikey organisation</td>
+      </tr>
+      <tr>
+        <td><strong>Personal Portfolio Website</strong></td>
+        <td>[2026]</td>
+        <td>Built with HTML and CSS, published on Google Sites -
+            <a href="#home">view this site</a></td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===== MEDIA ===== -->
+<section id="media">
+  <div class="container">
+    <h2>Media</h2>
+    <div class="gallery">
+      <figure>
+        <img src="amir1.jpeg" alt="Amir playing 3x3 basketball">
+        <figcaption>1</figcaption>
+      </figure>
+      <figure>
+        <img src="amir.jpeg" alt="">
+        <figcaption>2</figcaption>
+      </figure>
+      <figure>
+        <video controls>
+          <source src="https://commons.wikimedia.org/wiki/Special:FilePath/Big_Buck_Bunny_4K.webm" type="video/webm">
+          Your browser does not support video.
+        </video>
+    
+      </figure>
+      <figure>
+        <audio controls>
+          <source src="https://commons.wikimedia.org/wiki/Special:FilePath/Example.ogg" type="audio/ogg">
+          Your browser does not support audio.
+        </audio>
+      
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="cards contact-grid">
+      <div class="card">
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+
+          <label for="topic">Topic</label>
+          <select id="topic">
+            <option>Website project</option>
+            <option>Study question</option>
+            <option>Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+          <p id="formMessage"></p>
+        </form>
+      </div>
+      <div class="card">
+        <h3>My Contacts</h3>
+        <ul>
+          <li><a href="mailto:shorayevamir@gmail.com">shorayevamir@gmail.com</a></li>
+          <li><a href="mailto:amir.shorayev@qiu.edy.my">amir.shorayev@qiu.edu.my</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>&copy; 2026 Shorayev Amir | FIS1104 Introduction to Web Design | <a href="#home">Back to top</a></p>
+</footer>
+
+<script>
+  // show a thank-you message when the form is sent
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    document.getElementById("formMessage").textContent = "Thank you, " + name + "! Your message was sent.";
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
